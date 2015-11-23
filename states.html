@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Test task</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class=""><a href="languages.html" tabindex="13">Языки</a></li>
+            <li role="presentation" class="active"><a>Страны</a></li>
+            <li role="presentation" class=""><a href="cities.html" tabindex="13">Города</a></li>
+            <li role="presentation" class=""><a href="index.html" tabindex="13">Определить язык</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Test task</h3>
+      </div>
+
+        <table class="table table-striped">
+            <tr>
+                <th>#</th>
+                <th>Наименование</th>
+                <th>ISO Code</th>
+                <th>Язык</th>
+                <th></th><th></th>
+            </tr>
+        </table>
+        <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="state">Страна</label>
+              <input type="text" class="form-control" id="state" placeholder="Страна">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="iso-code">ISO Code</label>
+              <input type="text" class="form-control" id="iso-code" placeholder="ISO Code">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="lang">Язык</label>
+              <select class="form-control" id="lang">
+                <option value="" selected="selected">Выбрать язык</option>
+              </select>
+            </div>
+            
+            <input type="hidden" id="id_state" value="">
+            
+            <button id="data_save" type="button" class="btn btn-default">Сохранить</button>
+            <button id="data_cancel" type="button" class="btn btn-default">Отменить</button>
+        </form>
+        
+
+      <footer class="footer">
+        <p>&copy; Company 2015</p>
+      </footer>
+
+    </div> <!-- /container -->
+    
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script src="js/jquery.min.js"></script>
+    
+    <script src="js/states.js"></script>
+    
+  </body>
+</html>
